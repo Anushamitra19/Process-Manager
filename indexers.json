@@ -1,0 +1,24 @@
+{
+  "indexers": [
+    {
+      "name": "stellar-mainnet-indexer",
+      "script": "./mock_indexer.js",
+      "instances": 1,
+      "env": {
+        "NETWORK": "mainnet",
+        "HORIZON_URL": "https://horizon.stellar.org",
+        "TARGET_LAG": 0
+      }
+    },
+    {
+      "name": "stellar-testnet-indexer",
+      "script": "./mock_indexer.js",
+      "instances": 1,
+      "env": {
+        "NETWORK": "testnet",
+        "HORIZON_URL": "https://horizon-testnet.stellar.org",
+        "TARGET_LAG": 0
+      }
+    }
+  ]
+}
